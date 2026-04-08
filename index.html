@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+</head>
+<body>
+
+<h2>User Survey</h2>
+
+<form method="POST" action="/submit">
+
+    <label>Age:</label><br>
+    <input type="number" name="age" required><br><br>
+
+    <label>Gender:</label><br>
+    <select name="gender" required>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+    </select><br><br>
+
+    <label>Total Income:</label><br>
+    <input type="number" name="income" step="0.01" required><br><br>
+
+    <h3>Expenses</h3>
+
+    <label>Utilities:</label>
+    <input type="number" name="utilities" step="0.01"><br><br>
+
+    <label>Entertainment:</label>
+    <input type="number" name="entertainment" step="0.01"><br><br>
+
+    <label>School Fees:</label>
+    <input type="number" name="school_fees" step="0.01"><br><br>
+
+    <label>Shopping:</label>
+    <input type="number" name="shopping" step="0.01"><br><br>
+
+    <label>Healthcare:</label>
+    <input type="number" name="healthcare" step="0.01"><br><br>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>
